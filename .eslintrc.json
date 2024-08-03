@@ -1,0 +1,61 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb/hooks"
+  ],
+  "rules": {
+    "no-console": "off",
+    "import/no-cycle": "off",
+    "no-underscore-dangle": "off",
+    "import/no-named-as-default": 0,
+    "no-case-declarations": "off",
+    "no-prototype-builtins": "off",
+    "no-nested-ternary": "off",
+    "guard-for-in": "off",
+    "no-plusplus": "off",
+    "prefer-destructuring": ["error", { "array": false }],
+    "radix": ["error", "as-needed"],
+    "camelcase": 0,
+    "linebreak-style": 0,
+    "max-len": ["error", { "code": 180 }],
+    "jsx-quotes": ["error", "prefer-single"],
+    "jsx-a11y/no-noninteractive-tabindex": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "react/no-unstable-nested-components": "off",
+    "react/button-has-type": "off",
+    "react/require-default-props": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-closing-bracket-location": [2, "line-aligned"],
+    "react/jsx-pascal-case": [2, { "allowLeadingUnderscore": false }],
+    "react/jsx-filename-extension": "off",
+    "react/jsx-boolean-value": "error",
+    "react/jsx-curly-spacing": ["error", "never"],
+    "react/jsx-equals-spacing": ["error", "never"],
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-indent-props": ["error", 2],
+    "react/jsx-no-duplicate-props": "error",
+    "react/jsx-no-undef": "error",
+    "react/jsx-tag-spacing": ["error", { "beforeSelfClosing": "always" }],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/self-closing-comp": "error",
+    "react/jsx-max-props-per-line": ["error", { "when": "multiline" }],
+    "react/jsx-first-prop-new-line": ["error"],
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-array-index-key": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "function-expression"
+      }
+    ],
+    "array-callback-return": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/prefer-default-export": "off",
+    "no-param-reassign": "off",
+    "import/no-unresolved": "off"
+  }
+}
