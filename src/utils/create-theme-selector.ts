@@ -4,7 +4,5 @@ export const createThemeSelector = ({
   color: Record<string, string>;
 }) =>
   Object.entries(color)
-    .map((keys) => ({
-      [keys[0]]: keys[1],
-    }))
+    .map(([colorKey, colorValue]) => ({ [colorKey]: colorValue }))
     .reduce((obj, item) => Object.assign(obj, item), {});
