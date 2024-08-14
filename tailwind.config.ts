@@ -23,6 +23,7 @@ const config: Config = {
       },
       fontFamily: {
         raleway: ["var(--font-raleway)"],
+        montserrat: ["var(--font-montserrat)"],
       },
       fontSize: {
         h1: [

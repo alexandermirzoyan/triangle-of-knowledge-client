@@ -1,10 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import { ralewayFont } from "@/constants/fonts";
-
-const inter = Inter({ subsets: ["latin"] });
+import { montserrat, raleway } from "@/constants/fonts";
 
 export const metadata: Metadata = {
   title: "Triangle of Knowledge",
@@ -17,7 +14,9 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => (
   <html lang="en">
-    <body className={`${ralewayFont.variable}`}>{children}</body>
+    <body className={`${raleway.variable} ${montserrat.variable}`}>
+      {children}
+    </body>
   </html>
 );
 
