@@ -21,6 +21,9 @@ const config: Config = {
       boxShadow: {
         dropdown: " 0px 4px 20px 0px #00000042",
       },
+      fontFamily: {
+        raleway: ["var(--font-raleway)"],
+      },
       fontSize: {
         h1: [
           "48px",
