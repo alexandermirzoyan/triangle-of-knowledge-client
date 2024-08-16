@@ -1,1 +1,1 @@
-export * from "./create-theme-selector";
+export * from './create-theme-selector';

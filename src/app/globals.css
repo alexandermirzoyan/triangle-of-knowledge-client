@@ -7,3 +7,7 @@
     text-wrap: balance;
   }
 }
+
+body {
+  font-family: var(--font-raleway), Arial, sans-serif;
+}
