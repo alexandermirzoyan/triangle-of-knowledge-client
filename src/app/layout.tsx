@@ -2,7 +2,6 @@ import React from 'react';
 import type { Metadata } from 'next';
 import './globals.css';
 import { montserrat, raleway } from '@/constants/fonts';
-import { Providers } from './providers';
 
 export const metadata: Metadata = {
   title: 'Triangle of Knowledge',
@@ -14,15 +13,11 @@ const RootLayout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => (
-
   <html lang='en'>
     <body className={`${raleway.variable} ${montserrat.variable}`}>
-      <Providers>
-        {children}
-      </Providers>
+      {children}
     </body>
   </html>
-
 );
 
 export default RootLayout;
