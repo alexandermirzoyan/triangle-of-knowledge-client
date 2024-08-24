@@ -10,7 +10,7 @@ export const Modal = ({ children, isVisible }: IModalProps) => {
 
   return createPortal(
     (
-      <div className='w-full h-full absolute top-0'>
+      <div className='absolute top-0'>
         {children}
       </div>
     ),
