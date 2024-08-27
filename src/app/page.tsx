@@ -28,7 +28,7 @@ const Home = () => {
           />
         </div>
       </main>
-      <Modal isVisible={isModalVisible}>
+      <Modal isVisible={isModalVisible} onClose={() => setModalVisible(false)}>
         <p>children</p>
       </Modal>
     </>

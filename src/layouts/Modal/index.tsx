@@ -3,7 +3,7 @@
 import { createPortal } from 'react-dom';
 import { IModalProps } from './types';
 
-export const Modal = ({ children, isVisible }: IModalProps) => {
+export const Modal = ({ children, isVisible, onClose }: IModalProps) => {
   if (!isVisible) {
     return null;
   }
@@ -11,7 +11,9 @@ export const Modal = ({ children, isVisible }: IModalProps) => {
   return createPortal(
     (
       <div className='absolute top-0'>
-        {children}
+        <div role='presentation' onClick={onClose}>
+          {children}
+        </div>
       </div>
     ),
     document.body,
