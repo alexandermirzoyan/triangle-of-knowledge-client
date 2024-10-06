@@ -10,6 +10,7 @@ import { Modal } from '@/layouts/Modal';
 const Home = () => {
   const [isModalVisible, setModalVisible] = useState(false);
   const { theme } = useContext(ThemeContext);
+  console.log(process.env.NEXT_PUBLIC_API_HOST);
 
   return (
     <>
