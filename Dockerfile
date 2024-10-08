@@ -2,7 +2,7 @@
 FROM node:18-alpine AS builder
 
 # Set the working directory inside the container
-WORKDIR /app
+WORKDIR /frontend
 
 # Copy the package.json and package-lock.json files
 COPY package*.json ./
@@ -20,10 +20,11 @@ RUN npm run build
 FROM node:18-alpine
 
 # Set the working directory inside the container
-WORKDIR /app
+WORKDIR /frontend
 
 # Copy the built files from the previous stage
-COPY --from=builder /app ./
+COPY --from=builder /frontend ./
+RUN npm install -g next
 
 # Expose the Next.js default port
 EXPOSE 3000
