@@ -10,7 +10,7 @@ export const Modal = ({ children, isVisible, onClose }: IModalProps) => {
 
   return createPortal(
     (
-      <div className='absolute top-0'>
+      <div className='absolute top-0 z-50'>
         <div role='presentation' onClick={onClose}>
           {children}
         </div>
